@@ -1,5 +1,5 @@
 ###R for biologists
-##Irina & Rao, 18/10/2022
+##Irina & Rao, 30/11/2022
 
 ###Testing the truth value of an expression####
 1 < 2
@@ -28,8 +28,8 @@ if(x > 0) {
 }
 x <- -4
 
-gene_names = c("TP53", "PTEN", "RB1", "MYC")
-goi_name = "PTEN"
+gene_names <- c("TP53", "PTEN", "RB1", "MYC")
+goi_name <- "PTEN"
 if(goi_name %in% gene_names) {
   print("The gene of interest is in the gene set")
 }
@@ -62,30 +62,30 @@ if (x < 0) {
 i <- 1
 while (i < 6) {
   print(i)
-  i = i+1
+  i <- i+1
 }
 
-am_i_happy_today = TRUE
+am_i_happy_today <- TRUE
 while(am_i_happy_today) {  # an infinite loop
   print("happy")
 }
 
 while(am_i_happy_today) {  # a loop that runs only once
   print("happy")
-  am_i_happy_today = FALSE
+  am_i_happy_today <- FALSE
 }
 
-counter = 1
+counter <- 1
 while(counter <= 20) {
   print(counter)
-  counter = counter + 1
+  counter <- counter + 1
 }
 
-index = 1
+index <- 1
 while(index < 27) {
-  new_text = paste("letter", index, "is", LETTERS[index])
+  new_text <- paste("letter", index, "is", LETTERS[index])
   print(new_text)
-  index = index + 1
+  index <- index + 1
 }
 
 ##FOR loop iterates over a vector or a list
@@ -96,9 +96,9 @@ for (year in c(2011,2012,2013,2014,2015,2016)) #how to write that shorter?
   print(paste("The year is", year))
 }	
 
-gene_names = c("TP53", "PTEN", "RB1", "MYC")
+gene_names <- c("TP53", "PTEN", "RB1", "MYC")
 for(each_item in gene_names) {
-  each_item_lcase = tolower(each_item)
+  each_item_lcase <- tolower(each_item)
   print(each_item_lcase)
 }
 

@@ -1,7 +1,5 @@
 ###R for biologists
-##Irina & Rao, 11/10/2022
-
-# Q: Knockdown of which gene causes the cells to migrate the least?
+##Irina & Rao, 23/11/2022
 
 
 #### Cleaning data ####
@@ -9,22 +7,22 @@
 head(airquality)
 airquality$Ozone
 
-which_rows_complete = complete.cases(airquality)
+which_rows_complete <- complete.cases(airquality)
 airquality[which_rows_complete, ]
 
-ozone_without_missing = na.omit(airquality$Ozone)
+ozone_without_missing <- na.omit(airquality)
 
 
 #### FILTERING data ####
 # Subsetting by logical vectors comes in handy here
 # Knockdown of which genes results in migration > 1?
 
-which_rows_mig1 = migmorph$migration > 1
+which_rows_mig1 <- migmorph$migration > 1
 migmorph[which_rows_mig1, ]
 
 # Knockdown of which genes results in elongatedness < 1.5?
 
-which_rows_elongatedness1.5 = migmorph$elongatedness < 1.5
+which_rows_elongatedness1.5 <- migmorph$elongatedness < 1.5
 migmorph[which_rows_elongatedness1.5, ]
 
 #### DETOUR: logical operations - AND OR ####
